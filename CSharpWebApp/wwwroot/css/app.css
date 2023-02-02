@@ -1,0 +1,82 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    height: 100%;
+}
+
+.sidemenu {
+    position: absolute;
+    background-color: black;
+    min-height: calc(100% - 60px);
+    overflow: hidden;
+    transition: linear .5s;
+    background-color: gray;
+}
+
+.sidebtn {
+    justify-content: center;
+    color: white;
+    background-color: transparent;
+    transition: ease-in linear .5s;
+    min-width: 100%;
+    padding: 10px 10px 10px 10px;
+    border:none;
+    border-bottom: 1px solid darkgray;
+}
+
+
+header {
+    font-family: 'Microsoft Sans Serif';
+    color: white;
+    display: flex;
+    width: stretch;
+    padding-left: 20px;
+    height: 60px;
+    align-items: center;
+    justify-items: center;
+    background-color: #AC2B37;
+}
+
+.menubutton {
+    margin: 0px 0px 0px 20px;
+    content: "";
+    border: none;
+    background-color: transparent;
+    display: inline-flow;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 7px 0px;
+    transition: 0.4s;
+}
+
+.menubutton.active .bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+}
+
+.menubutton.active .bar2 {
+    opacity: 0;
+}
+
+.menubutton.active .bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+}
+
+
+select {
+    margin: 5px;
+    width: 270px;
+    padding: 5px 5px 5px 10px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 40px;
+    appearance: none;
+}

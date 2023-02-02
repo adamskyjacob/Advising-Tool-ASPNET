@@ -1,0 +1,14 @@
+.courses {
+    min-width: 100%;
+    justify-content: center;
+}
+
+.tr {
+    border-bottom: 2px solid black;
+    height: 40px;
+    cursor: pointer;
+}
+
+.th {
+    width: 33%;
+}

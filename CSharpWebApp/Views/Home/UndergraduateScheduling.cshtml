@@ -1,0 +1,119 @@
+﻿@using CSharpWebApp.Models
+@using MySql.Data.MySqlClient
+@model Dictionary<string, List<string>>
+@{
+    ViewData["Title"] = "Information";
+}
+@functions {
+    public Dictionary<string, string> HumanitiesList()
+    {
+        Dictionary<string, string> retList = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM humanities");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    retList.Add(sdr["studyarea"].ToString(), sdr["longname"].ToString());
+                }
+            }
+            con.Close();
+        }
+        return retList;
+    }
+    public Dictionary<string, string> GetAreas()
+    {
+        Dictionary<string, string> retList = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM studyarea");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    retList.Add(sdr["studyarea"].ToString(), sdr["longname"].ToString());
+                }
+            }
+            con.Close();
+        }
+        return retList;
+    }
+}
+
+<script src="../js/utils.js" language="javascript" type="text/javascript"></script>
+<head>
+    <link rel="stylesheet" href="~/css/undergrad.css" asp-append-version="true" />
+    <link rel="icon" href="./favicon.ico" />
+</head>
+<body>
+    <div class="scheduling">
+        <strong>Area of Study</strong><br />
+        <select class="aos">
+            @foreach (KeyValuePair<string, string> area in GetAreas())
+            {
+                <option value=@area.Key>@area.Value</option>
+            }
+        </select>
+        <strong>Student Year</strong><br />
+        <select class="syear"></select>
+        <strong>Humanities / HUA</strong><br />
+        <select class="hua">
+            @foreach (KeyValuePair<string, string> humanity in HumanitiesList())
+            {
+                <option value=@humanity.Key>@humanity.Value</option>
+            }
+        </select>
+        <strong>BS / MS</strong><br />
+        <select class="bsms"></select>
+        <strong>IQP Type</strong><br />
+        <select class="iqp"></select>
+        <button class="scheduleview" onclick="SendRequest()">Get Schedule</button>
+    </div>
+</body>
+<script>
+    var bsmsArr = ["BS", "MS", "BS / MS"]
+    bsmsArr.forEach(t => {
+        var bsmsOption = document.createElement('option');
+        bsmsOption.innerHTML = t;
+        document.querySelector(".bsms").appendChild(bsmsOption);
+    });
+
+
+    var iqpArr = ["On-Campus", "Off-Campus"]
+    iqpArr.forEach(t => {
+        var iqpOption = document.createElement('option');
+        iqpOption.innerHTML = t;
+        document.querySelector(".iqp").appendChild(iqpOption);
+    });
+
+    //Object.keys(aosMap).forEach(function (x) {
+    //    var aosOption = document.createElement('option');
+    //    aosOption.setAttribute('key', x);
+    //    aosOption.innerHTML = aosMap[x];
+    //    document.querySelector(".aos").appendChild(aosOption);
+    //});
+
+    function GetRequest() {
+        let degree = document.querySelector(".degreeselect").value;
+        let year = document.querySelector(".yearselect").value;
+        let humanity = document.querySelector(".humanityselect").value;
+        let bsms = document.querySelector(".bsms").value;
+        let iqp = document.querySelector(".iqpoption").value;
+        let result = {
+            "humanities": humanity,
+            "year": year,
+            "degree": degree,
+            "bsms": bsms,
+            "iqpoption": iqp
+        }
+        return result;
+    }
+    function SendRequest() {
+        localStorage.setItem("scheduleRequest", JSON.stringify(GetRequest()));
+    }
+</script>

@@ -1,0 +1,72 @@
+﻿@using MySql.Data.MySqlClient
+@model Course
+@{
+    ViewData["Title"] = "Information";
+}
+
+@functions {
+    public List<string?[]> GetAreas()
+    {
+        List<string?[]> retList = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM studyarea");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    retList.Add(new string?[] { sdr["studyarea"].ToString(), sdr["longname"].ToString() });
+                }
+            }
+            con.Close();
+        }
+        return retList;
+    }
+}
+
+<link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+<form asp-action="InsertCourse" class="form-horizontal">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label class="control-label">Area</label>
+        <select asp-for="area" class="form-control ar" onchange="checkPrefix()">
+            @foreach (var prop in GetAreas())
+            {
+                <option value=@prop[1] data-content=@prop[0]>@prop[1]</option>
+            }
+        </select>
+        <span asp-validation-for="area" class="text-danger"></span>
+    </div>
+    <div class="form-group course-prefix">
+        <label class="control-label">Course ID</label>
+        <input asp-for="course" class="form-control cor" onkeyup="checkPrefix()" />
+        <span asp-validation-for="course" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Description</label>
+        <input asp-for="description" class="form-control desc" />
+        <span asp-validation-for="description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Professor</label>
+        <input asp-for="professor" class="form-control prof" />
+        <span asp-validation-for="professor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn bg-primary" />
+    </div>
+</form>
+<script>
+    function checkPrefix() {
+        var textInput = document.querySelector(".cor");
+        var areaSelect = document.querySelector(".ar");
+        var prefix = areaSelect[areaSelect.selectedIndex].getAttribute("data-content");
+        if (textInput.value[0] !== prefix.charAt(0) ||
+            textInput.value[1] !== prefix.charAt(1)) {
+            textInput.value = prefix;
+        }
+    }
+    checkPrefix();
+</script>

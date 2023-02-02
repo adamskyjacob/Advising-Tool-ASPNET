@@ -1,0 +1,47 @@
+﻿@model CourseViewData
+
+<link rel="stylesheet" href="~/css/courseview.css" asp-append-version="true" />
+<div class="options">
+    <input type="text" id="namefilter" onkeyup="filterCourses()" placeholder="Search by course name...">
+    <input type="text" id="proffilter" onkeyup="filterCourses()" placeholder="Search by professor...">
+    <select id="areafilt" onchange="filterCourses()">
+        <option value="">None</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Robotics Engineering">Robotics Engineering</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Physics">Physics</option>
+    </select>
+</div>
+<table id="courses" class="courses">
+    <tr class="header">
+        <th class="th">Course</th>
+        <th class="th">Area</th>
+        <th class="th">Professor</th>
+    </tr>
+    @foreach (Course entry in Model.courseList)
+    {
+        <tr class="tr">
+            <td class="course">@entry.course</td>
+            <td class="area">@entry.area</td>
+            <td class="professor">@entry.professor</td>
+        </tr>
+    }
+</table>
+<script>
+    function filterCourses() {
+        var areaFilterObj = document.getElementById("areafilt");
+        var areaFilter = areaFilterObj.options[areaFilterObj.selectedIndex].value;
+        var table = document.getElementById("courses");
+        var nameFilter = document.getElementById("namefilter").value;
+        var profFilter = document.getElementById("proffilter").value;
+
+        table.querySelectorAll(".tr").forEach(t => {
+            t.style.display = (t.querySelector(".course").textContent.toLowerCase().includes(nameFilter.toLowerCase()) &&
+                t.querySelector(".area").textContent.toLowerCase().includes(areaFilter.toLowerCase()) &&
+                t.querySelector(".professor").textContent.toLowerCase().includes(profFilter.toLowerCase())) ? "" : "none";
+            if (t.style.display !== "none") {
+                return;
+            }
+        });
+    }
+</script>

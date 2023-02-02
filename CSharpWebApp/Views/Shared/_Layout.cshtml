@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CSharpWebApp.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        MENU
+        <button class="menubutton" onclick="clickMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+    </header>
+    <div class="sidemenu">
+        <button class="sidebtn" onclick="location.href = '/Home'">Homepage</button>
+        <button class="sidebtn" onclick="location.href = '/Home/Administration'">Administration</button>
+        <button class="sidebtn" onclick="location.href = '/Home/CourseView'">Courses</button>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+<script>
+    var sidebar = document.querySelector(".sidemenu");
+    sidebar.style.width = '0px';
+    function clickMenu() {
+        if (sidebar.style.width === '0px') {
+            sidebar.style.width = '150px';
+        } else {
+            sidebar.style.width = '0px';
+        }
+        var sidebtns = sidebar.querySelectorAll(".sidebtn");
+        sidebtns.forEach((div) => {
+            div.style.width = 'fit-content';
+        });
+        document.querySelector(".menubutton").classList.toggle("active")
+    }
+</script>
+</html>

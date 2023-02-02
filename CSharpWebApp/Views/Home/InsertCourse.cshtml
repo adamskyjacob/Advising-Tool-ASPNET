@@ -1,0 +1,15 @@
+﻿@model Course
+<head>
+    <link rel="icon" href="./favicon.ico" />
+</head>
+<body className="body">
+    <div>
+        @foreach (var prop in Model.GetType().GetProperties())
+        {
+            <div class=@prop.Name>
+                <strong>@prop.Name.ToString().ToTitleCase()</strong>
+                @prop.GetValue(Model, null)
+            </div>
+        }
+    </div>
+</body>

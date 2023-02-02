@@ -1,0 +1,19 @@
+.textbox {
+    display: flex;
+    background-color: #FFF;
+    color: #888;
+    line-height: 20px;
+    height: 20px;
+    padding: 3px;
+    border: 1px #888 solid;
+    font-size: 9pt;
+}
+
+    .textbox input {
+        border: 0px;
+        background-color: #FFF;
+    }
+
+select {
+    margin-left: 0;
+}
