@@ -1,0 +1,56 @@
+﻿@using MySql.Data.MySqlClient
+
+@model CourseSection
+@functions {
+    public List<CourseSection> GetCourseSections()
+    {
+        List<CourseSection> retList = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM coursesections WHERE courseid='" + Model.courseid + "';");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    retList.Add(new()
+                        {
+                            area = sdr["area"].ToString(),
+                            courseid = sdr["courseid"].ToString(),
+                            time = byte.Parse(sdr["time"].ToString()),
+                            periodlength = byte.Parse(sdr["periodlength"].ToString()),
+                            building = sdr["building"].ToString(),
+                            room = int.Parse(sdr["room"].ToString())
+                        });
+                }
+                con.Close();
+            }
+            return retList;
+        }
+    }
+}
+<link rel="stylesheet" href="~/css/coursesectview.css" asp-append-version="true" />
+<body>
+    <table id="courses" class="courses">
+        <tr class="header">
+            <th class="th">Course ID</th>
+            <th class="th">Area</th>
+            <th class="th">Building</th>
+            <th class="th">Room</th>
+            <th class="th">Time</th>
+            <th class="th">Period Length</th>
+        </tr>
+        @foreach (CourseSection sect in GetCourseSections())
+        {
+            <tr class="tr">
+                <td class="courseid">@sect.courseid</td>
+                <td class="area">@sect.area</td>
+                <td class="building">@sect.building</td>
+                <td class="room">@sect.room</td>
+                <td class="time">@sect.time</td>
+                <td class="periodlength">@sect.periodlength</td>
+            </tr>
+        }
+    </table>
+</body>

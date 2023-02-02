@@ -1,4 +1,28 @@
-﻿@model Course
+﻿@using MySql.Data.MySqlClient
+@model Course
+
+@functions {
+    public List<string?[]> GetAreas()
+    {
+        List<string?[]> retList = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM studyarea");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    retList.Add(new string?[] { sdr["studyarea"].ToString(), sdr["longname"].ToString() });
+                }
+            }
+            con.Close();
+        }
+        return retList;
+    }
+}
+
 <head>
     <link rel="icon" href="./favicon.ico" />
 </head>
@@ -12,4 +36,5 @@
             </div>
         }
     </div>
+    <button onclick="location.href = '/Home/AddSection'">TEST</button>
 </body>

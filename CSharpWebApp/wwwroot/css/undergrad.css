@@ -1,4 +1,6 @@
-
+body{
+    overflow:clip;
+}
 :root {
     --menu-bg: gray;
     --menu-font-color: #FFFFFF;
@@ -7,6 +9,7 @@
     --menu-bg-hover: #52dcff;
     --menu-bg-selected-chevron: #3cac1a;
 }
+
 .undervsgrad {
     display: table-cell;
     padding: 100px;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wun56dq92CAWxxzOPU+BSd5JELpMBqWgQSSAT37wpPc=",
+  "Hash": "MZk/i1yYCJmjNNDGfFWHrF8eZUropoIsf0N9egmI7vo=",
   "Source": "CSharpWebApp",
   "BasePath": "_content/CSharpWebApp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\wwwroot\\css\\coursesectview.css",
+      "SourceId": "CSharpWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\wwwroot\\",
+      "BasePath": "_content/CSharpWebApp",
+      "RelativePath": "css/coursesectview.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\coursesectview.css"
     },
     {
       "Identity": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\wwwroot\\css\\courseview.css",
@@ -1205,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\wwwroot\\logo.png",
+      "SourceId": "CSharpWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\wwwroot\\",
+      "BasePath": "_content/CSharpWebApp",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }

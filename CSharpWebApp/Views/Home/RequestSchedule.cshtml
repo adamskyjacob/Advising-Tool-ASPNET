@@ -1,0 +1,19 @@
+﻿@model UScheduleRequest
+
+@functions{
+    public Schedule GetScheduleFromRequest(){
+        UScheduleRequest req = Model;
+        return new Schedule();
+    }
+}
+<body className="body">
+    <div>
+        @foreach (var prop in Model.GetType().GetProperties())
+        {
+            <div class=@prop.Name>
+                <strong>@prop.Name.ToString().ToTitleCase()</strong>
+                @prop.GetValue(Model, null)
+            </div>
+        }
+    </div>
+</body>

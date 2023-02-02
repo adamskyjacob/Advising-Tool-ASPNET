@@ -1,11 +1,8 @@
 ﻿using CSharpWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 using System.Data;
 using System.Diagnostics;
-using MySqlX.XDevAPI.Relational;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace CSharpWebApp.Controllers
 {
@@ -22,6 +19,10 @@ namespace CSharpWebApp.Controllers
         {
             return View();
         }
+        public IActionResult AddSection()
+        {
+            return View();
+        }
         public IActionResult CourseView()
         {
             CourseViewData courseViewData = new()
@@ -34,12 +35,33 @@ namespace CSharpWebApp.Controllers
         {
             return View();
         }
+        public IActionResult AddCourseSection(CourseSection section)
+        {
+            string values = "'" + section.courseid + "','" + section.area + "','" + section.time + "','" + section.periodlength + "','" + section.building + "','" + section.room + "'";
+            using MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;");
+            using MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = @"INSERT INTO `coursesections` (`courseid`, `area`,`time`, `periodlength`, `building`, `room`) VALUES (" + values + ");";
+            con.Open();
+            try
+            {
+                cmd.ExecuteNonQueryAsync();
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.StackTrace);
+                con.Close();
+            }
+            con.Close();
+            return View(section);
+        }
         public IActionResult InsertCourse(Course var)
         {
             using MySqlConnection con = new(constr);
             using MySqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = @"INSERT INTO `courses` (`course`, `area`,`description`, `professor`) VALUES (@course, @area, @description, @professor);";
-            BindParams(cmd, var);
+            cmd.CommandText = @"INSERT INTO `courses` (`courseid`, `area`,`description`, `professor`,`name`) VALUES (@courseid, @area, @description, @professor, @name);";
+            Course course = var;
+            course.courseid = course.courseid.Remove(0, var.area.Length);
+            BindParams(cmd, course);
             con.Open();
             try
             {
@@ -51,7 +73,7 @@ namespace CSharpWebApp.Controllers
                 con.Close();
                 return View(new Course()
                 {
-                    course = "ERROR",
+                    courseid = "ERROR",
                     area = "ERROR",
                     description = "ERROR",
                     professor = "ERROR"
@@ -60,7 +82,8 @@ namespace CSharpWebApp.Controllers
             con.Close();
             return View(new Course()
             {
-                course = var.course,
+                name = var.name,
+                courseid = var.courseid,
                 area = var.area,
                 description = var.description,
                 professor = var.professor
@@ -80,9 +103,11 @@ namespace CSharpWebApp.Controllers
         }
         public IActionResult UndergraduateScheduling()
         {
-            Dictionary<string, List<string>> dropdownData = new();
-            dropdownData.Add("AOS", QueryDB("SELECT * FROM ", "studyarea"));
-            return View(dropdownData);
+            return View();
+        }
+        public IActionResult RequestSchedule(UScheduleRequest req)
+        {
+            return View(req);
         }
         public IActionResult GraduateScheduling()
         {
@@ -123,7 +148,7 @@ namespace CSharpWebApp.Controllers
                     {
                         retList.Add(new Course()
                         {
-                            course = sdr["course"].ToString(),
+                            courseid = sdr["courseid"].ToString(),
                             area = sdr["area"].ToString(),
                             description = sdr["description"].ToString(),
                             professor = sdr["professor"].ToString()

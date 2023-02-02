@@ -14,14 +14,14 @@
 </div>
 <table id="courses" class="courses">
     <tr class="header">
-        <th class="th">Course</th>
+        <th class="th">Course ID</th>
         <th class="th">Area</th>
         <th class="th">Professor</th>
     </tr>
     @foreach (Course entry in Model.courseList)
     {
         <tr class="tr">
-            <td class="course">@entry.course</td>
+            <td class="course">@entry.courseid</td>
             <td class="area">@entry.area</td>
             <td class="professor">@entry.professor</td>
         </tr>
