@@ -42,37 +42,29 @@
     </div>
     <div class="form-group">
         <label class="control-label">Start Time</label>
-        <input asp-for="time" class="form-control time" />
+        <input asp-for="time" class="form-control time" onkeyup="checkPrefix()" />
         <span asp-validation-for="time" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label class="control-label">Number of Periods</label>
-        <input asp-for="periodlength" class="form-control len" />
+        <input asp-for="periodlength" class="form-control len" onkeyup="checkPrefix()" />
         <span asp-validation-for="periodlength" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label class="control-label">Building</label>
-        <input asp-for="building" class="form-control build" />
+        <input asp-for="building" class="form-control build" onkeyup="checkPrefix()" />
         <span asp-validation-for="building" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label class="control-label">Room #</label>
-        <input asp-for="room" class="form-control room" />
+        <input asp-for="room" class="form-control room" onkeyup="checkPrefix()" />
         <span asp-validation-for="room" class="text-danger"></span>
     </div>
-    <input type="submit" value="Submit" class="btn bg-primary" onclick="submitForm()" />
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn bg-primary" />
     </div>
 </form>
 <script>
-    function submitForm() {
-        var form = [];
-        form["area"] = (document.querySelector(".ar").value);
-        form["courseid"] = (document.querySelector(".cor").value);
-        form["time"] = (document.querySelector(".time").value);
-        form["periodlength"] = (document.querySelector(".len").value);
-        form["building"] = (document.querySelector(".build").value);
-        form["room"] = (document.querySelector(".room").value);
-    }
     function checkPrefix() {
         var textInput = document.querySelector(".cor");
         var areaSelect = document.querySelector(".ar");

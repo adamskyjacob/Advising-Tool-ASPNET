@@ -1,0 +1,11 @@
+﻿@using MySql.Data.MySqlClient
+@{
+    ViewData["Title"] = "Home";
+}
+
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+<div class="undervsgrad">
+    <button onclick="location.href = '/Home/UndergraduateScheduling'">Undergraduate</button>
+    <div class="gradspacer"></div>
+    <button onclick="location.href = '/Home/GraduateScheduling'">Graduate</button>
+</div>

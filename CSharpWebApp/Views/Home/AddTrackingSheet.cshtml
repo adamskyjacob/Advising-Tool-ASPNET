@@ -1,0 +1,68 @@
+﻿@using MySql.Data.MySqlClient
+@using System.Text.Json.Nodes
+@model MajorTrackingSheet
+@functions {
+    public List<string?[]> GetAreas()
+    {
+        List<string?[]> retList = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM studyarea");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    retList.Add(new string?[] { sdr["studyarea"].ToString(), sdr["longname"].ToString() });
+                }
+            }
+            con.Close();
+        }
+        return retList;
+    }
+    public JsonObject JsonObj()
+    {
+        JsonObject ret = new JsonObject();
+        ret.Add("test", "test");
+        return ret;
+    }
+}
+<link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+<form asp-action="AddSheet" class="form-horizontal">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label class="control-label">Area</label>
+        <select asp-for="AREA" class="form-control ar">
+            @foreach (var prop in GetAreas())
+            {
+                <option value=@prop[0]>@prop[1]</option>
+            }
+        </select>
+        <span asp-validation-for="AREA" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input asp-for="PHYSED" value=4 disabled />
+    </div>
+    <div class="form-group">
+        <input asp-for="IQP" value=3 disabled />
+    </div>
+    <div class="form-group">
+        <input asp-for="MQP" value=3 disabled />
+    </div>
+    <div class="form-group">
+        <input asp-for="HUA" value=6 disabled />
+    </div>
+    <div class="form-group">
+        <input asp-for="ELECT" value=4 disabled />
+    </div>
+    <div class="form-group">
+        <input asp-for="SOCSCI" value=2 disabled />
+    </div>
+    <div class="form-group">
+        <input asp-for="SECT" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn bg-primary" />
+    </div>
+</form>

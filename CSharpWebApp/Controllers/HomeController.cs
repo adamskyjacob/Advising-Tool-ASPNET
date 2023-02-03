@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Diagnostics;
+using System.Text.Json.Nodes;
+using static System.Collections.Specialized.BitVector32;
 
 namespace CSharpWebApp.Controllers
 {
@@ -54,6 +56,30 @@ namespace CSharpWebApp.Controllers
             con.Close();
             return View(section);
         }
+        public IActionResult AddSheet(MajorTrackingSheet var)
+        {
+            using MySqlConnection con = new(constr);
+            using MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = @"INSERT INTO `majortrack` (`AREA`,`PHYSED`,`ELECT`,`HUA`,`MQP`,`IQP`,`SECT`,`SOCSCI`) VALUES (@AREA,@PHYSED,@ELECT,@HUA,@MQP,@IQP,@SECT,@SOCSCI);";
+            BindParams(cmd, var);
+            con.Open();
+            try
+            {
+                cmd.ExecuteNonQueryAsync();
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.StackTrace);
+                con.Close();
+                return View(var);
+            }
+            con.Close();
+            return View(var);
+        }
+        public IActionResult AddTrackingSheet(MajorTrackingSheet majorTrackingSheet)
+        {
+            return View();
+        }
         public IActionResult InsertCourse(Course var)
         {
             using MySqlConnection con = new(constr);
@@ -88,6 +114,19 @@ namespace CSharpWebApp.Controllers
                 description = var.description,
                 professor = var.professor
             });
+        }
+        private static void BindParams(MySqlCommand cmd, MajorTrackingSheet data)
+        {
+            foreach (var prop in data.GetType().GetProperties())
+            {
+                cmd.Parameters.Add(new MySqlParameter
+                {
+                    ParameterName = "@" + prop.Name,
+                    DbType = DbType.String,
+                    Value = prop.GetValue(data, null)
+                });
+            }
+            return;
         }
         private static void BindParams(MySqlCommand cmd, Course data)
         {
