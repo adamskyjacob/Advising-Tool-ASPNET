@@ -42,27 +42,74 @@
         <span asp-validation-for="AREA" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="PHYSED" value=4 disabled />
+        <input asp-for="PHYSED" value=4 />
+        <span asp-validation-for="PHYSED" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="IQP" value=3 disabled />
+        <input asp-for="IQP" value=3 />
+        <span asp-validation-for="IQP" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="MQP" value=3 disabled />
+        <input asp-for="MQP" value=3 />
+        <span asp-validation-for="MQP" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="HUA" value=6 disabled />
+        <input asp-for="HUA" value=6 />
+        <span asp-validation-for="HUA" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="ELECT" value=4 disabled />
+        <input asp-for="ELECT" value=4 />
+        <span asp-validation-for="ELECT" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="SOCSCI" value=2 disabled />
+        <input asp-for="SOCSCI" value=2 />
+        <span asp-validation-for="SOCSCI" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="SECT" />
+        <input asp-for="SECT" hidden />
+        <div class="courseSect">
+            <div class="sectInput">
+                <input class="areaCourseInput" />
+                <select class="areaCourseSelect" onchange="console.log(this.value)">
+                    @foreach (var prop in GetAreas())
+                    {
+                        <option value=@prop[0]>@prop[1]</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <span asp-validation-for="SECT" class="text-danger"></span>
+    </div>
+    <div>
+        <button type="button" onclick="addInput()">Add another section</button>
     </div>
     <div class="form-group">
         <input type="submit" value="Submit" class="btn bg-primary" />
     </div>
 </form>
+<script>
+    function addInput() {
+        var div = document.createElement("div");
+        div.classList.add(document.querySelectorAll("div").length);
+        var input = document.createElement("input");
+        var select = document.createElement("select");
+        var removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.onclick = function(){
+            removeButton.parentElement.remove();
+        }
+        removeButton.innerHTML = "X";
+        var def = document.querySelector(".areaCourseSelect").querySelectorAll("option").forEach(t => {
+            var copy = t.cloneNode();
+            copy.innerHTML = t.innerHTML;
+            select.appendChild(copy);
+        });
+        input.onkeydown = function () {
+            addInput(input);
+        }
+        div.appendChild(input);
+        div.appendChild(select);
+        div.appendChild(removeButton);
+        document.querySelector(".courseSect").appendChild(div);
+    }
+</script>
