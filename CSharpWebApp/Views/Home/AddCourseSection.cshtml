@@ -32,25 +32,28 @@
 }
 <link rel="stylesheet" href="~/css/coursesectview.css" asp-append-version="true" />
 <body>
-    <table id="courses" class="courses">
-        <tr class="header">
-            <th class="th">Course ID</th>
-            <th class="th">Area</th>
-            <th class="th">Building</th>
-            <th class="th">Room</th>
-            <th class="th">Time</th>
-            <th class="th">Period Length</th>
-        </tr>
-        @foreach (CourseSection sect in GetCourseSections())
-        {
-            <tr class="tr">
-                <td class="courseid">@sect.courseid</td>
-                <td class="area">@sect.area</td>
-                <td class="building">@sect.building</td>
-                <td class="room">@sect.room</td>
-                <td class="time">@sect.time</td>
-                <td class="periodlength">@sect.periodlength</td>
+    <div class="sectionview">
+        <table id="courses" class="courses">
+            <tr class="header">
+                <th class="th">Course ID</th>
+                <th class="th">Area</th>
+                <th class="th">Building</th>
+                <th class="th">Room</th>
+                <th class="th">Time</th>
+                <th class="th">Period Length</th>
             </tr>
-        }
-    </table>
+            @foreach (CourseSection sect in GetCourseSections())
+            {
+                <tr class="tr">
+                    <td class="courseid">@sect.courseid</td>
+                    <td class="area">@sect.area</td>
+                    <td class="building">@sect.building</td>
+                    <td class="room">@sect.room</td>
+                    <td class="time">@sect.time</td>
+                    <td class="periodlength">@sect.periodlength</td>
+                </tr>
+            }
+        </table>
+        <button class="newsect" onclick="location.href = '/Home/AddSection'"> Add Another Section</button>
+    </div>
 </body>

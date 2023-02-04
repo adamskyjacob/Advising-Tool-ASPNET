@@ -37,9 +37,15 @@ namespace CSharpWebApp.Controllers
         {
             return View();
         }
+        public IActionResult AddCourse()
+        {
+            return View();
+        }
         public IActionResult AddCourseSection(CourseSection section)
         {
-            string values = "'" + section.courseid + "','" + section.area + "','" + section.time + "','" + section.periodlength + "','" + section.building + "','" + section.room + "'";
+            CourseSection sectionCopy = section;
+            sectionCopy.courseid = section.courseid.Remove(0, section.area.Length);
+            string values = "'" + sectionCopy.courseid + "','" + sectionCopy.area + "','" + sectionCopy.time + "','" + sectionCopy.periodlength + "','" + sectionCopy.building + "','" + sectionCopy.room + "'";
             using MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;");
             using MySqlCommand cmd = con.CreateCommand();
             cmd.CommandText = @"INSERT INTO `coursesections` (`courseid`, `area`,`time`, `periodlength`, `building`, `room`) VALUES (" + values + ");";
@@ -54,7 +60,7 @@ namespace CSharpWebApp.Controllers
                 con.Close();
             }
             con.Close();
-            return View(section);
+            return View(sectionCopy);
         }
         public IActionResult AddSheet(MajorTrackingSheet var)
         {

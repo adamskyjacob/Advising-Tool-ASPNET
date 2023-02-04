@@ -5,80 +5,85 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CSharpWebApp
 build_property.RootNamespace = CSharpWebApp
-build_property.ProjectDir = C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp\
+build_property.ProjectDir = C:\Users\Jacob\Desktop\Advising Tool\Advising-Tool-ASPNET\CSharpWebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp
+build_property.MSBuildProjectDirectory = C:\Users\Jacob\Desktop\Advising Tool\Advising-Tool-ASPNET\CSharpWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/AddCourseSection.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/AddCourseSection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRDb3Vyc2VTZWN0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/AddSection.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/AddSection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRTZWN0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/AddSheet.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/AddSheet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRTaGVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/AddTrackingSheet.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/AddTrackingSheet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRUcmFja2luZ1NoZWV0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/Administration.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/Administration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbmlzdHJhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/CourseView.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/CourseView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2VWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/GraduateScheduling.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/GraduateScheduling.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcmFkdWF0ZVNjaGVkdWxpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/Index.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/InsertCourse.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/InsertCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnNlcnRDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/RequestSchedule.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/RequestSchedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXF1ZXN0U2NoZWR1bGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/UndergraduateScheduling.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/UndergraduateScheduling.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVbmRlcmdyYWR1YXRlU2NoZWR1bGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Home/ViewCourse.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Home/ViewCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3Q291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Shared/Error.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/_ViewImports.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/_ViewStart.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/docto/Desktop/CSharpWebApp/CSharpWebApp/Views/Shared/_Layout.cshtml]
+[C:/Users/Jacob/Desktop/Advising Tool/Advising-Tool-ASPNET/CSharpWebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-k15icv677l

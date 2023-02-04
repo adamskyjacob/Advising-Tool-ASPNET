@@ -1,6 +1,9 @@
 ﻿@using MySql.Data.MySqlClient
+@model Course
+@{
+    ViewData["Title"] = "Information";
+}
 
-@model CourseSection
 @functions {
     public List<string?[]> GetAreas()
     {
@@ -22,8 +25,9 @@
         return retList;
     }
 }
+
 <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
-<form asp-action="AddCourseSection" class="form-horizontal" onchange="checkValues()">
+<form asp-action="InsertCourse" class="form-horizontal">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label class="control-label">Area</label>
@@ -35,41 +39,31 @@
         </select>
         <span asp-validation-for="area" class="text-danger"></span>
     </div>
-    <div class="form-group">
+    <div class="form-group course-prefix">
         <label class="control-label">Course ID</label>
         <input asp-for="courseid" class="form-control cor" onkeyup="checkPrefix()" />
         <span asp-validation-for="courseid" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label class="control-label">Start Time</label>
-        <input asp-for="time" class="form-control time" onkeyup="checkPrefix()" />
-        <span asp-validation-for="time" class="text-danger"></span>
+    <div class="form-group course-prefix">
+        <label class="control-label">Name</label>
+        <input asp-for="name" class="form-control cor" onkeyup="checkPrefix()" />
+        <span asp-validation-for="name" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label class="control-label">Number of Periods</label>
-        <input asp-for="periodlength" class="form-control len" onkeyup="checkPrefix()" />
-        <span asp-validation-for="periodlength" class="text-danger"></span>
+        <label class="control-label">Description</label>
+        <input asp-for="description" class="form-control desc" onkeyup="checkPrefix()" />
+        <span asp-validation-for="description" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label class="control-label">Building</label>
-        <input asp-for="building" class="form-control build" onkeyup="checkPrefix()" />
-        <span asp-validation-for="building" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label class="control-label">Room #</label>
-        <input asp-for="room" class="form-control room" onkeyup="checkPrefix()" />
-        <span asp-validation-for="room" class="text-danger"></span>
+        <label class="control-label">Professor</label>
+        <input asp-for="professor" class="form-control prof" onkeyup="checkPrefix()" />
+        <span asp-validation-for="professor" class="text-danger"></span>
     </div>
     <div class="form-group">
         <input type="submit" value="Submit" class="btn bg-primary" />
     </div>
 </form>
 <script>
-    function checkValues(){
-        document.querySelectorAll(".input").forEach(t=>{
-            t.value === "" ? document.querySelector(".bg-primary")
-        })
-    }
     function checkPrefix() {
         var textInput = document.querySelector(".cor");
         var areaSelect = document.querySelector(".ar");

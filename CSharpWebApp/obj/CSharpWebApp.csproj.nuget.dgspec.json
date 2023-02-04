@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\CSharpWebApp.csproj": {}
+    "C:\\Users\\Jacob\\Desktop\\Advising Tool\\Advising-Tool-ASPNET\\CSharpWebApp\\CSharpWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\CSharpWebApp.csproj": {
+    "C:\\Users\\Jacob\\Desktop\\Advising Tool\\Advising-Tool-ASPNET\\CSharpWebApp\\CSharpWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\CSharpWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Jacob\\Desktop\\Advising Tool\\Advising-Tool-ASPNET\\CSharpWebApp\\CSharpWebApp.csproj",
         "projectName": "CSharpWebApp",
-        "projectPath": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\CSharpWebApp.csproj",
-        "packagesPath": "C:\\Users\\docto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\docto\\Desktop\\CSharpWebApp\\CSharpWebApp\\obj\\",
+        "projectPath": "C:\\Users\\Jacob\\Desktop\\Advising Tool\\Advising-Tool-ASPNET\\CSharpWebApp\\CSharpWebApp.csproj",
+        "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jacob\\Desktop\\Advising Tool\\Advising-Tool-ASPNET\\CSharpWebApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\VS Stuff\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\docto\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
