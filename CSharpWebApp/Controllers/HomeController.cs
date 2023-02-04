@@ -66,7 +66,7 @@ namespace CSharpWebApp.Controllers
         {
             using MySqlConnection con = new(constr);
             using MySqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = @"INSERT INTO `majortrack` (`AREA`,`PHYSED`,`ELECT`,`HUA`,`MQP`,`IQP`,`SECT`,`SOCSCI`) VALUES (@AREA,@PHYSED,@ELECT,@HUA,@MQP,@IQP,@SECT,@SOCSCI);";
+            cmd.CommandText = @"INSERT INTO `majortrack` (`AREA`,`PHYSED`,`ELECT`,`HUA`,`MQP`,`IQP`,`SECT`,`SOCSCI`,`REQ`) VALUES (@AREA,@PHYSED,@ELECT,@HUA,@MQP,@IQP,@SECT,@SOCSCI,@REQ);";
             BindParams(cmd, var);
             con.Open();
             try

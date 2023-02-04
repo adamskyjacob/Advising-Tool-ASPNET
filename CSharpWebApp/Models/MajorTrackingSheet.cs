@@ -15,6 +15,7 @@ namespace CSharpWebApp.Models
         public int SOCSCI { get { return 2; } }
         public int ELECT { get { return 3; } }
         public string SECT { get; set; }
+        public string REQ { get; set; }
 
     }
 }

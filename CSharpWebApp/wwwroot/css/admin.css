@@ -17,3 +17,30 @@
 select {
     margin-left: 0;
 }
+
+.csel, .csele {
+    width: 100px;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+.csele {
+    margin-left: 4.2px;
+}
+
+.courseSect {
+    display: grid;
+    width: max-content;
+}
+
+    .courseSect .sectInput {
+        display: flow;
+    }
+
+.remove {
+    border-radius: 5px;
+    margin-left:5px;
+}
+
+.id{
+    margin-left:5px;
+}

@@ -66,49 +66,172 @@
         <span asp-validation-for="SOCSCI" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <input asp-for="SECT" hidden />
+        <input asp-for="SECT" class="sect" hidden />
         <div class="courseSect">
             <div class="sectInput">
-                <input class="areaCourseInput" />
-                <select class="areaCourseSelect" onchange="console.log(this.value)">
+                <select class="areaCourseSelect">
                     @foreach (var prop in GetAreas())
                     {
                         <option value=@prop[0]>@prop[1]</option>
                     }
                 </select>
+                <input class="one csel" placeholder="1K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="two csel" placeholder="2K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="three csel" placeholder="3K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="four csel" placeholder="4K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="five csel" placeholder="5K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
             </div>
         </div>
         <span asp-validation-for="SECT" class="text-danger"></span>
     </div>
-    <div>
-        <button type="button" onclick="addInput()">Add another section</button>
+    <div class="form-group">
+        <input asp-for="REQ" class="req" hidden />
+        <span asp-validation-for="REQ" class="text-danger"></span>
     </div>
     <div class="form-group">
+        <div class="reqCourses">
+            <div class="reqCourse">
+                <select class="reqArea">
+                    @foreach (var prop in GetAreas())
+                    {
+                        <option value=@prop[0]>@prop[1]</option>
+                    }
+                </select>
+                <input class="reqId" placeholder="Course ID" type="number" min=0 />
+                <button class="removeButton" type="button" onclick="this.parentElement.remove()" style="margin-left:2px;border-radius:5px">X</button>
+            </div>
+        </div>
+    </div>
+    <div>
         <input type="submit" value="Submit" class="btn bg-primary" />
+        <button type="button" onclick="addInput()">Add another section</button>
+        <button type="button" onclick="addCourse()">Add required Course</button>
     </div>
 </form>
 <script>
-    function addInput() {
+    function addCourse() {
         var div = document.createElement("div");
-        div.classList.add(document.querySelectorAll("div").length);
-        var input = document.createElement("input");
+        div.classList.add("reqCourse");
         var select = document.createElement("select");
+        select.classList.add("area");
+        select.onchange = function () {
+            getSectionInput();
+        }
+        var input = document.createElement("input");
+        input.classList.add("id");
+        input.type = "number";
+        input.placeholder = "Course ID";
+        input.onchange = function () {
+            getSectionInput();
+        }
+        input.onkeyup = function () {
+            getSectionInput();
+        }
+        document.querySelector(".areaCourseSelect").querySelectorAll("option").forEach(t => {
+            var copy = t.cloneNode();
+            copy.innerHTML = t.innerHTML;
+            select.appendChild(copy);
+        });
         var removeButton = document.createElement("button");
         removeButton.type = "button";
-        removeButton.onclick = function(){
+        removeButton.classList.add("remove");
+        removeButton.onclick = function () {
             removeButton.parentElement.remove();
         }
         removeButton.innerHTML = "X";
+        div.appendChild(select);
+        div.appendChild(input);
+        div.appendChild(removeButton);
+        document.querySelector(".reqCourses").appendChild(div);
+    }
+    function intToDefault(num) {
+        switch (num) {
+            case 1:
+                return "1K Level";
+            case 2:
+                return "2K Level";
+            case 3:
+                return "3K Level";
+            case 4:
+                return "4K Level";
+            case 5:
+                return "5K Level";
+            default:
+                return "";
+        }
+    }
+    function intToString(num) {
+        switch (num) {
+            case 1:
+                return "one";
+            case 2:
+                return "two";
+            case 3:
+                return "three";
+            case 4:
+                return "four";
+            case 5:
+                return "five";
+            default:
+                return "";
+        }
+    }
+    function getSectionInput() {
+        var value = {};
+        document.querySelector(".courseSect").querySelectorAll(".sectInput").forEach(t => {
+            var obj = {};
+            var i = 1;
+            t.querySelectorAll(".csel").forEach(k => {
+                obj[i] = k.value;
+                i++;
+            });
+            value[t.querySelector(".areaCourseSelect").value] = obj;
+        });
+        document.querySelector(".sect").value = JSON.stringify(value);
+        var req = {};
+        var j = 0;
+        document.querySelectorAll(".reqCourse").forEach(t => {
+            req[j++] = {
+                "id": t.querySelector(".reqId").value,
+                "area": t.querySelector(".reqArea").value
+            };
+        });
+        document.querySelector(".req").value = JSON.stringify(req);
+    }
+    function addInput() {
+        var div = document.createElement("div");
+        div.classList.add("sectInput");
+        var select = document.createElement("select");
+        select.classList.add("areaCourseSelect");
         var def = document.querySelector(".areaCourseSelect").querySelectorAll("option").forEach(t => {
             var copy = t.cloneNode();
             copy.innerHTML = t.innerHTML;
             select.appendChild(copy);
         });
-        input.onkeydown = function () {
-            addInput(input);
-        }
-        div.appendChild(input);
         div.appendChild(select);
+        for (let i = 1; i <= 5; i++) {
+            var input = document.createElement("input");
+            input.classList.add("csel");
+            input.classList.add("csele");
+            input.classList.add(intToString(i));
+            input.placeholder = intToDefault(i);
+            input.type = "number";
+            input.min = 0;
+            input.onchange = function () {
+                getSectionInput();
+            }
+            input.onkeyup = function () {
+                getSectionInput();
+            }
+            div.appendChild(input);
+        }
+        var removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.classList.add("remove");
+        removeButton.onclick = function () {
+            removeButton.parentElement.remove();
+        }
+        removeButton.innerHTML = "X";
         div.appendChild(removeButton);
         document.querySelector(".courseSect").appendChild(div);
     }
