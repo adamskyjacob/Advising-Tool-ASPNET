@@ -2,20 +2,16 @@
 
 namespace CSharpWebApp.Models
 {
-    public class MajorTrackingSheet : TrackingSheet
+    public class MajorTrackingSheet
     {
         public string AREA { get; set; }
-        public int MQP { get { return 3; } }
-        public int IQP
-        {
-            get { return 3; }
-        }
-        public int HUA { get { return 6; } }
-        public int PHYSED { get { return 4; } }
-        public int SOCSCI { get { return 2; } }
-        public int ELECT { get { return 3; } }
+        public int MQP { get; set; }
+        public int IQP { get; set; }
+        public int HUA { get; set; }
+        public int PHYSED { get; set; }
+        public int SOCSCI { get; set; }
+        public int ELECT { get; set; }
         public string SECT { get; set; }
         public string REQ { get; set; }
-
     }
 }

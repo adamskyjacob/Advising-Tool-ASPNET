@@ -1,0 +1,107 @@
+﻿@using MySql.Data.MySqlClient
+@using System.Text.Json.Nodes
+@model GraduateSheet
+@functions {
+    public List<string?[]> GetAreas()
+    {
+        List<string?[]> retList = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM studyarea");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    retList.Add(new string?[] { sdr["studyarea"].ToString(), sdr["longname"].ToString() });
+                }
+            }
+            con.Close();
+        }
+        return retList;
+    }
+}
+<link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+<form asp-action="AddSheet" class="form-horizontal">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label class="control-label">Area</label>
+        <select asp-for="AREA" class="form-control ar areaInit">
+            @foreach (var prop in GetAreas())
+            {
+                <option value=@prop[0]>@prop[1]</option>
+            }
+        </select>
+        <span asp-validation-for="AREA" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input asp-for="COURSES" class="courses" hidden />
+        <span asp-validation-for="COURSES" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <div class="reqCourses">
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="submit" value="Submit">Submit</button>
+        <button type="button" class="add" onclick="addCourse()">Add required Course</button>
+    </div>
+</form>
+<script>
+    @foreach (var prop in GetAreas())
+    {
+        Console.Write(prop);
+    };
+    function getInput() {
+        var courses = [];
+        let i = 0;
+        document.querySelectorAll(".reqCourse").forEach(t => {
+            courses[i++] = {
+                "AREA": t.querySelector(".area").value,
+                "ID": t.querySelector(".id").value
+            }
+        });
+        document.querySelector(".courses").value = {
+            "COURSES": courses
+        }
+    }
+    function addCourse() {
+        var div = document.createElement("div");
+        div.classList.add("reqCourse");
+        var select = document.createElement("select");
+        select.classList.add("area");
+        select.onchange = function () {
+            console.log()
+        }
+        var input = document.createElement("input");
+        input.classList.add("id");
+        input.type = "number";
+        input.required = true;
+        input.placeholder = "Course ID";
+        input.onchange = function () {
+            getInput();
+        }
+        input.onkeyup = function () {
+            getInput();
+        }
+        document.querySelector(".areaInit").querySelectorAll("option").forEach(t => {
+            var copy = t.cloneNode();
+            copy.innerHTML = t.innerHTML;
+            select.appendChild(copy);
+        });
+        select.onclick = function () {
+        }
+        var removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.classList.add("remove");
+        removeButton.onclick = function () {
+            removeButton.parentElement.remove();
+        }
+        removeButton.innerHTML = "X";
+        div.appendChild(select);
+        div.appendChild(input);
+        div.appendChild(removeButton);
+        document.querySelector(".reqCourses").appendChild(div);
+    }
+</script>

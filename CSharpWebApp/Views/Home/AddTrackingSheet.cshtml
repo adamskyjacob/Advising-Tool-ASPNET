@@ -21,12 +21,6 @@
         }
         return retList;
     }
-    public JsonObject JsonObj()
-    {
-        JsonObject ret = new JsonObject();
-        ret.Add("test", "test");
-        return ret;
-    }
 }
 <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
 <form asp-action="AddSheet" class="form-horizontal">
@@ -75,11 +69,11 @@
                         <option value=@prop[0]>@prop[1]</option>
                     }
                 </select>
-                <input class="one csel" placeholder="1K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
-                <input class="two csel" placeholder="2K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
-                <input class="three csel" placeholder="3K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
-                <input class="four csel" placeholder="4K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
-                <input class="five csel" placeholder="5K Level" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="one csel" placeholder="1K Level" value="0" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="two csel" placeholder="2K Level" value="0" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="three csel" placeholder="3K Level" value="0" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="four csel" placeholder="4K Level" value="0" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
+                <input class="five csel" placeholder="5K Level" value="0" type="number" min=0 onchange="getSectionInput()" onkeyup="getSectionInput()" />
             </div>
         </div>
         <span asp-validation-for="SECT" class="text-danger"></span>
@@ -90,22 +84,12 @@
     </div>
     <div class="form-group">
         <div class="reqCourses">
-            <div class="reqCourse">
-                <select class="reqArea">
-                    @foreach (var prop in GetAreas())
-                    {
-                        <option value=@prop[0]>@prop[1]</option>
-                    }
-                </select>
-                <input class="reqId" placeholder="Course ID" type="number" min=0 />
-                <button class="removeButton" type="button" onclick="this.parentElement.remove()" style="margin-left:2px;border-radius:5px">X</button>
-            </div>
         </div>
     </div>
     <div>
-        <input type="submit" value="Submit" class="btn bg-primary" />
-        <button type="button" onclick="addInput()">Add another section</button>
-        <button type="button" onclick="addCourse()">Add required Course</button>
+        <button type="submit" class="submit" value="Submit">Submit</button>
+        <button type="button" class="add" onclick="addInput()">Add another section</button>
+        <button type="button" class="add" onclick="addCourse()">Add required Course</button>
     </div>
 </form>
 <script>

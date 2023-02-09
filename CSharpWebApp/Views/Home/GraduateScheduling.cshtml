@@ -1,23 +1,26 @@
 ﻿@using CSharpWebApp.Models
+@using SpecFlow.Internal.Json
 @using MySql.Data.MySqlClient
-@model Dictionary<string, List<string>>
+
+@model GraduateRequest
+
 @{
     ViewData["Title"] = "Information";
 }
 @functions {
-    public Dictionary<string, string> HumanitiesList()
+    public static Dictionary<string, string> GetGraduateOptions()
     {
         Dictionary<string, string> retList = new();
         using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
         {
-            using MySqlCommand cmd = new("SELECT * FROM humanities");
+            using MySqlCommand cmd = new("SELECT * FROM graddegrees");
             cmd.Connection = con;
             con.Open();
             using (MySqlDataReader sdr = cmd.ExecuteReader())
             {
                 while (sdr.Read())
                 {
-                    retList.Add(sdr["studyarea"].ToString(), sdr["longname"].ToString());
+                    retList.Add(sdr["AREA"].ToString(), sdr["DEGREES"].ToString());
                 }
             }
             con.Close();
@@ -25,69 +28,58 @@
         return retList;
     }
 }
-<script src="../js/utils.js" language="javascript" type="text/javascript"></script>
+
 <head>
     <link rel="stylesheet" href="~/css/undergrad.css" asp-append-version="true" />
     <link rel="icon" href="./favicon.ico" />
+    <script type="text/javascript" src="~/js/utils.js"></script>
 </head>
 <body>
-    <div class="scheduling">
-        <strong>Area of Study</strong><br />
-        <select class="aos">
-            @foreach (string area in Model.GetValueOrDefault("AOS"))
-            {
-                <option>@area</option>
-            }
-        </select>
-        <strong>Student Year</strong><br />
-        <select class="syear"></select>
-        <strong>Humanities / HUA</strong><br />
-        <select class="hua">
-            @foreach (KeyValuePair<string, string> humanity in HumanitiesList())
-            {
-                <option value=@humanity.Key>@humanity.Value</option>
-            }
-        </select>
-        <strong>BS / MS</strong><br />
-        <select class="bsms"></select>
-        <strong>IQP Type</strong><br />
-        <select class="iqp"></select>
-        <button class="scheduleview" onclick="SendRequest()">Get Schedule</button>
-    </div>
-    <div class="schedules" />
+    <form asp-action="GetGraduateSchedule" class="form-horizontal" onchange="checkValues()">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <div class="scheduling">
+                <strong>Area of Study</strong><br />
+                <select id="aos" onchange="showDegree()">
+                    @foreach (KeyValuePair<string, string> pair in GetGraduateOptions())
+                    {
+                        <option class="option" value=@pair.Key></option>
+                    }
+                </select>
+                <label><b>Degree Options</b></label>
+                @foreach (KeyValuePair<string, string> pair in GetGraduateOptions())
+                {
+                    <div class="sect" id=@pair.Key>
+                        <select asp-for="TYPE">
+                            @foreach (string str in pair.Value.Split("], ["))
+                            {
+                                List<string> vals = new();
+                                string[] obj = str.Split(',');
+                                foreach (string val in obj)
+                                {
+                                    vals.Add(val.Replace("[", "").Replace("]", "").Replace("\"", ""));
+                                }
+                                <option value=@vals[0]>@vals[1]</option>
+                            }
+                        </select>
+                    </div>
+                }
+            </div>
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
 </body>
 <script>
-    var bsmsArr = ["BS", "MS", "BS / MS"]
-    bsmsArr.forEach(t => {
-        var bsmsOption = document.createElement('option');
-        bsmsOption.innerHTML = t;
-        document.querySelector(".bsms").appendChild(bsmsOption);
+    document.querySelector("#aos").querySelectorAll(".option").forEach(t => {
+        t.innerHTML = aosMap[t.value];
     });
-
-
-    var iqpArr = ["On-Campus", "Off-Campus"]
-    iqpArr.forEach(t => {
-        var iqpOption = document.createElement('option');
-        iqpOption.innerHTML = t;
-        document.querySelector(".iqp").appendChild(iqpOption);
-    });
-
-    function GetRequest() {
-        let degree = document.querySelector(".degreeselect").value;
-        let year = document.querySelector(".yearselect").value;
-        let humanity = document.querySelector(".humanityselect").value;
-        let bsms = document.querySelector(".bsms").value;
-        let iqp = document.querySelector(".iqpoption").value;
-        let result = {
-            "humanities": humanity,
-            "year": year,
-            "degree": degree,
-            "bsms": bsms,
-            "iqpoption": iqp
-        }
-        return result;
+    function showDegree() {
+        document.querySelectorAll(".sect").forEach(t => {
+            t.hidden = "true";
+            if (t.id === document.getElementById("aos").value) {
+                t.hidden = false;
+            }
+        });
     }
-    function SendRequest() {
-        localStorage.setItem("scheduleRequest", JSON.stringify(GetRequest()));
-    }
+    showDegree();
 </script>

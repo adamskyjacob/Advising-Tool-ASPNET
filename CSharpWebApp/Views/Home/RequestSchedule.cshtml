@@ -1,18 +1,65 @@
-﻿@model UScheduleRequest
+﻿@using MySql.Data.MySqlClient
+@model UScheduleRequest
 
-@functions{
-    public Schedule GetScheduleFromRequest(){
+@functions {
+    private MajorTrackingSheet GetTrackingSheet()
+    {
+        MajorTrackingSheet majorTrackingSheet = new();
+        using (MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;"))
+        {
+            using MySqlCommand cmd = new("SELECT * FROM majortrack HAVING AREA='" + Model.aos + "';");
+            cmd.Connection = con;
+            con.Open();
+            using (MySqlDataReader sdr = cmd.ExecuteReader())
+            {
+                while (sdr.Read())
+                {
+                    try
+                    {
+                        int physed, elect, hua, mqp, iqp, socsci;
+                        physed = (int)sdr["PHYSED"];
+                        elect = (int)sdr["ELECT"];
+                        hua = (int)sdr["HUA"];
+                        mqp = (int)sdr["MQP"];
+                        iqp = (int)sdr["IQP"];
+                        socsci = (int)sdr["SOCSCI"];
+                        majorTrackingSheet = new()
+                            {
+                                AREA = sdr["AREA"].ToString(),
+                                SECT = sdr["SECT"].ToString(),
+                                REQ = sdr["REQ"].ToString(),
+                                PHYSED = physed,
+                                ELECT = elect,
+                                HUA = hua,
+                                MQP = mqp,
+                                IQP = iqp,
+                                SOCSCI = socsci
+                            };
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+            con.Close();
+        }
+        return majorTrackingSheet;
+    }
+    public MajorTrackingSheet GetScheduleFromRequest()
+    {
         UScheduleRequest req = Model;
-        return new Schedule();
+        MajorTrackingSheet majorTrackingSheet = GetTrackingSheet();
+        return majorTrackingSheet;
     }
 }
 <body className="body">
     <div>
-        @foreach (var prop in Model.GetType().GetProperties())
+        @foreach (var prop in GetScheduleFromRequest().GetType().GetProperties())
         {
             <div class=@prop.Name>
                 <strong>@prop.Name.ToString().ToTitleCase()</strong>
-                @prop.GetValue(Model, null)
+                @prop.GetValue(GetScheduleFromRequest(), null)
             </div>
         }
     </div>

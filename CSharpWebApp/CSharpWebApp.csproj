@@ -7,14 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="areas.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="areas.json" />
     <None Include="wwwroot\js\utils.js" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
     <PackageReference Include="MySql.Data" Version="8.0.32" />
+    <PackageReference Include="SpecFlow.Internal.Json" Version="1.0.8" />
   </ItemGroup>
 
 </Project>

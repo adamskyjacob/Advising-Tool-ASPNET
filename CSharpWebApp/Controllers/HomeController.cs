@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Diagnostics;
-using System.Text.Json.Nodes;
-using static System.Collections.Specialized.BitVector32;
 
 namespace CSharpWebApp.Controllers
 {
@@ -17,6 +15,10 @@ namespace CSharpWebApp.Controllers
         {
             _logger = logger;
         }
+        public IActionResult GetGraduateSchedule(GraduateRequest req)
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
@@ -24,6 +26,11 @@ namespace CSharpWebApp.Controllers
         public IActionResult AddSection()
         {
             return View();
+        }
+        public void Test()
+        {
+            var providerChart = System.Web.Helpers.Json.Decode(System.IO.File.ReadAllText("areas.js"));
+            Console.Write(providerChart);
         }
         public IActionResult CourseView()
         {
@@ -35,6 +42,7 @@ namespace CSharpWebApp.Controllers
         }
         public IActionResult Administration()
         {
+            Test();
             return View();
         }
         public IActionResult AddCourse()
@@ -82,7 +90,11 @@ namespace CSharpWebApp.Controllers
             con.Close();
             return View(var);
         }
-        public IActionResult AddTrackingSheet(MajorTrackingSheet majorTrackingSheet)
+        public IActionResult AddTrackingSheet()
+        {
+            return View();
+        }
+        public IActionResult AddGraduateSheet()
         {
             return View();
         }
@@ -156,9 +168,7 @@ namespace CSharpWebApp.Controllers
         }
         public IActionResult GraduateScheduling()
         {
-            Dictionary<string, List<string>> dropdownData = new();
-            dropdownData.Add("AOS", QueryDB("SELECT * FROM ", "studyarea"));
-            return View(dropdownData);
+            return View();
         }
         public List<string> QueryDB(string query, string table)
         {

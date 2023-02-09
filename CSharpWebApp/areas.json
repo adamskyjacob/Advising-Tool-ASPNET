@@ -1,0 +1,237 @@
+[
+    {
+        "AREA": "AE",
+        "DEGREES": [
+            { "MST": "M.S. in Aerospace Engineering (thesis)" },
+            { "MSNT": "M.S. in Aerospace Engineering (non-thesis)" },
+            { "PHD": "Ph.D in Aerospace Engineering" }
+        ]
+    },
+    {
+        "AREA": "BCB",
+        "DEGREES": [
+            { "MS": "M.S. in Bioinformatics and Computational Biology" },
+            { "PHD": "Ph.D in Bioinformatics and Computational Biology" }
+        ]
+    },
+    {
+        "AREA": "BB",
+        "DEGREES": [
+            { "MSBBT": "M.S. in Biology and Biotechnology (thesis-based)" },
+            { "MSBT": "M.S. in Biotechnology (skills-based)" },
+            { "PHD": "Ph.D in Biology and Biotechnology" }
+        ]
+    },
+    {
+        "AREA": "BME",
+        "DEGREES": [
+            { "ME": "M.E. in Biomedical Engineering" },
+            { "MST": "M.S. in Biomedical Engineering (thesis)" },
+            { "MSP": "M.S. in Biomedical Engineering (project)" },
+            { "PHD": "Ph.D in Biomedical Engineering" }
+        ]
+    },
+    {
+        "AREA": "BUS",
+        "DEGREES": [
+            { "MSBA": "M.S. in Business Analytics" },
+            { "MSIT": "M.S. in Information Technology" },
+            { "MSIUX": "M.S. in Innovation with User Experience" },
+            { "MSMG": "M.S. in Management" },
+            { "MSOSCA": "M.S. in Operations and Supply Chain Analytics" },
+            { "MBA": "Master of Business Administration" },
+            { "PHD": "Ph.D in Business" }
+        ]
+    },
+    {
+        "AREA": "CHE",
+        "DEGREES": [
+            { "MSPT": "Professional Master of Science in Chemical Engineering (thesis)" },
+            { "MSPNT": "Professional Master of Science in Chemical Engineering (non-thesis)" }
+        ]
+    },
+    {
+        "AREA": "CH",
+        "DEGREES": [
+            { "MST": "M.S. in Chemistry or Biochemistry (thesis)" },
+            { "MSNT": "M.S. in Chemistry or Biochemistry (non-thesis)" },
+            { "PHD": "Ph.D in Chemistry and Biochemistry" }
+        ]
+    },
+    {
+        "AREA": "CE",
+        "DEGREES": [
+            { "ME": "M.E. in Civil Engineering" },
+            { "MSCE": "M.S. in Civil Engineering" },
+            { "MSEE": "M.S. in Environmental Engineering" },
+            { "PHD": "Ph.D in Civil Engineering" }
+        ]
+    },
+    {
+        "AREA": "CCA",
+        "DEGREES": [
+            { "MS": "M.S. in Climate Change Adaptation" }
+        ]
+    },
+    {
+        "AREA": "CS",
+        "DEGREES": [
+            { "MCS": "Master of Computer Science" },
+            { "MST": "M.S. in Computer Science (thesis)" },
+            { "MSNT": "M.S. in Computer Science (non-thesis)" },
+            { "MSSEC": "M.S. in Computer Science specializing in Computer Security" },
+            { "PHD": "Ph.D in Computer Science" },
+            { "MSCYSEC": "M.S. in Cyber Security" }
+        ]
+    },
+    {
+        "AREA": "DS",
+        "DEGREES": [
+            { "GC": "Graduate Certificate in Data Science" },
+            { "MS": "M.S. in Data Science" },
+            { "PHD": "Ph.D in Data Science" }
+        ]
+    },
+    {
+        "AREA": "ECE",
+        "DEGREES": [
+            { "GC": "Graduate Certificate in Power Systems" },
+            { "MST": "M.S. in Electrical and Computer Engineering (thesis)" },
+            { "MSNT": "M.S. in Electrical and Computer Engineering (non-thesis)" },
+            { "MEECE": "Master of Engineering in Electrical and Computer Engineering" },
+            { "MEPSE": "Master of Engineering in Power Systems Engineering" },
+            { "PHD": "Ph.D in Electrical and Computer Engineering" }
+        ]
+    },
+    {
+        "AREA": "FPE",
+        "DEGREES": [
+            { "GC": "Graduate Certificate in Fire Protection Engineering" },
+            { "MS": "M.S. in Fire Protection Engineering" },
+            { "PHD": "Ph.D in Fire Protection Engineering" }
+        ]
+    },
+    {
+        "AREA": "IMGD",
+        "DEGREES": [
+            { "MFA": "M.F.A. in Interactive Media and Game Development" },
+            { "MS": "M.S. in Interactive Media and Game Development" },
+            { "PHD": "Ph.D in Computational Media Program Goals and Objectives" }
+        ]
+    },
+    {
+        "AREA": "LST",
+        "DEGREES": [
+            { "MST": "M.S. in Learning Sciences and Technologies (thesis)" },
+            { "MSCW": "M.S. in Learning Sciences and Technologies (coursework)" },
+            { "PHD": "Ph.D in Learning Sciences and Technologies" }
+        ]
+    },
+    {
+        "AREA": "MFE",
+        "DEGREES": [
+            { "MST": "M.S. in Manufacturing Engineering (thesis)" },
+            { "MSNT": "M.S. in Manufacturing Engineering (non-thesis)" },
+            { "PHD": "Ph.D in Manufacturing Engineering" }
+        ]
+    },
+    {
+        "AREA": "MTE",
+        "DEGREES": [
+            { "MST": "M.S. in Materials Science and Engineering (thesis)" },
+            { "MSNT": "M.S in Materials Science and Engineering (non-thesis)" },
+            { "PHD": "Ph.D in Materials Science and Engineering " }
+        ]
+    },
+    {
+        "AREA": "MA",
+        "DEGREES": [
+            { "MME": "Master of Mathematics for Educators" },
+            { "MSAM": "M.S. in Applied Mathematics Program" },
+            { "MSAS": "M.S. in Applied Statistics Program" },
+            { "MMED": "Master of Science in Mathematics for Educators" },
+            { "MSFM": "Professional Master of Science in Financial Mathematics" },
+            { "MSIM": "Professional Master of Science in Industrial Mathematics" },
+            { "PHDM": "Ph.D in Mathematical Sciences" },
+            { "PHDM": "Ph.D in Statistics" }
+        ]
+    },
+    {
+        "AREA": "ME",
+        "DEGREES": [
+            { "GCMETL": "Graduate Certificate: Mechanical Engineering for Technical Leaders" },
+            { "MST": "M.S. in Mechanical Engineering (thesis)" },
+            { "MSNT": "M.S. in Mechanical Engineering (non-thesis)" },
+            { "PHDM": "Ph.D in Mechanical Engineering" }
+        ]
+    },
+    {
+        "AREA": "NEU",
+        "DEGREES": [
+            { "MST": "M.S. in Neuroscience (thesis)" },
+            { "MSNT": "M.S. in Neuroscience (non-thesis)" }
+        ]
+    },
+    {
+        "AREA": "PH",
+        "DEGREES": [
+            { "MPED": "Master of Science in Physics for Educators" },
+            { "GCNSE": "Graduate Certificate in Nuclear Science and Engineering" },
+            { "MST": "M.S. in Physics or Applied Physics (thesis)" },
+            { "MSNT": "M.S. in Physics or Applied Physics (non-thesis)" },
+            { "PHD": "Ph.D in Physics or Applied Physics" }
+        ]
+    },
+    {
+        "AREA": "RBE",
+        "DEGREES": [
+            { "GC": "Graduate Certificate in Robotics Engineering" },
+            { "MST": "M.S. in Robotics Engineering (thesis)" },
+            { "MSNT": "M.S. in Robotics Engineering (non-thesis)" },
+            { "PHD": "Ph.D  in Robotics Engineering" }
+        ]
+    },
+    {
+        "AREA": "DEV",
+        "DEGREES": [
+            { "MS": "M.S. in Science and Technology for Innovation in Global Development" }
+        ]
+    },
+    {
+        "AREA": "SD",
+        "DEGREES": [
+            { "MSSD": "M.S. in System Dynamics" },
+            { "MSSM": "M.S. in Systems Modeling" },
+            { "PHDSD": "Ph.D in System Dynamics" }
+        ]
+    },
+    {
+        "AREA": "SDIM",
+        "DEGREES": [
+            { "GC": "Graduate Certificate in System Dynamics and Innovation Management" },
+            { "MS": "M.S. in System Dynamics and Innovation Management" }
+        ]
+    },
+    {
+        "AREA": "SE",
+        "DEGREES": [
+            { "STC": "Systems Thinking Certificate" },
+            { "GC": "Graduate Certificate in System Engineering" },
+            { "GCF": "Graduate Certificate in Systems Engineering Fundamentals" },
+            { "AC": "Advanced Certificate in Systems Engineering" },
+            { "MS": "M.S. in Systems Engineering" },
+            { "PHD": "Ph.D in Systems Engineering" }
+        ]
+    },
+    {
+        "AREA": "OTHER",
+        "COURSES": [
+            { "GCPSM": "Graduate Certificate in Power Systems Management" },
+            { "GCLSM": "Graduate Certificate in Life Science Management" },
+            { "IMSBM": "Interdisciplinary M.S. in Bioscience Management" },
+            { "IMSMEM": "Interdisciplinary M.S. in Manufacturing Engineering Management" },
+            { "IMSPSM": "Interdisciplinary M.S. in Power Systems Management" },
+            { "IMSSEL": "Interdisciplinary M.S. in Systems Engineering Leadership" }
+        ]
+    }
+]
