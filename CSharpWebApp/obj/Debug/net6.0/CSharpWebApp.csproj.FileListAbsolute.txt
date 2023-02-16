@@ -217,3 +217,5 @@ C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp\bin\Debug\net6.0\System.Web.Web
 C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp\bin\Debug\net6.0\SpecFlow.Internal.Json.dll
+C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp\bin\Debug\net6.0\degreecourses.json
+C:\Users\docto\Desktop\CSharpWebApp\CSharpWebApp\bin\Debug\net6.0\sectionalcourses.json

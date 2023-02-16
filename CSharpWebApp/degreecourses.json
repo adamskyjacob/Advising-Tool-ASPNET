@@ -1,0 +1,828 @@
+[
+    {
+        "AREA": "AE",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Aerospace Engineering (thesis)",
+        "COURSES": {
+            "AE": [
+                {
+                    "ID": 5099,
+                    "AREA": "AE",
+                    "COUNT": 4
+                }
+            ],
+            "PICK": {
+                "COUNT": 1,
+                "OPTIONS": [
+                    {
+                        "ID": 511,
+                        "AREA": "MA",
+                        "COUNT": 4
+                    },
+                    {
+                        "ID": 501,
+                        "AREA": "MA",
+                        "COUNT": 1
+                    },
+                    {
+                        "ID": 0,
+                        "AREA": "MA",
+                        "COUNT": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "AREA": "AE",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Aerospace Engineering (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "AE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Aerospace Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BCB",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in Bioinformatics and Computational Biology",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BCB",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Bioinformatics and Computational Biology",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BB",
+        "DEGREE": "MSBT",
+        "LONGNAME": "M.S. in Biology and Biotechnology (thesis-based)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BB",
+        "DEGREE": "MSBBT",
+        "LONGNAME": "M.S. in Biotechnology (skills-based)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BB",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Biology and Biotechnology",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BME",
+        "DEGREE": "ME",
+        "LONGNAME": "M.E. in Biomedical Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BME",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Biomedical Engineering (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BME",
+        "DEGREE": "MSP",
+        "LONGNAME": "M.S. in Biomedical Engineering (project)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BME",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Biomedical Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BUS",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Business",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BUS",
+        "DEGREE": "MBA",
+        "LONGNAME": "Master of Business Administration",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BUS",
+        "DEGREE": "MSOSCA",
+        "LONGNAME": "M.S. in Operations and Supply Chain Analytics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BUS",
+        "DEGREE": "MSMG",
+        "LONGNAME": "M.S. in Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BUS",
+        "DEGREE": "MSIUX",
+        "LONGNAME": "M.S. in Innovation with User Experience",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BUS",
+        "DEGREE": "MSIT",
+        "LONGNAME": "M.S. in Information Technology",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "BUS",
+        "DEGREE": "MSBA",
+        "LONGNAME": "M.S. in Business Analytics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CHE",
+        "DEGREE": "MSPNT",
+        "LONGNAME": "Professional Master of Science in Chemical Engineering (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CHE",
+        "DEGREE": "MSPT",
+        "LONGNAME": "Professional Master of Science in Chemical Engineering (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CH",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Chemistry and Biochemistry",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CH",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Chemistry or Biochemistry (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CH",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Chemistry or Biochemistry (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Civil Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CE",
+        "DEGREE": "MSEE",
+        "LONGNAME": "M.S. in Environmental Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CE",
+        "DEGREE": "MSCE",
+        "LONGNAME": "M.S. in Civil Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CE",
+        "DEGREE": "ME",
+        "LONGNAME": "M.E. in Civil Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CCA",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in Climate Change Adaptation",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CS",
+        "DEGREE": "MCS",
+        "LONGNAME": "Master of Computer Science",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CS",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Computer Science (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CS",
+        "DEGREE": "MSSEC",
+        "LONGNAME": "M.S. in Computer Science specializing in Computer Security",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CS",
+        "DEGREE": "MSCYSEC",
+        "LONGNAME": "M.S. in Cyber Security",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CS",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Computer Science",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "CS",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Computer Science (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "DS",
+        "DEGREE": "GC",
+        "LONGNAME": "Graduate Certificate in Data Science",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "DS",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in Data Science",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "DS",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Data Science",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ECE",
+        "DEGREE": "GC",
+        "LONGNAME": "Graduate Certificate in Power Systems",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ECE",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Electrical and Computer Engineering (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ECE",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Electrical and Computer Engineering (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ECE",
+        "DEGREE": "MEECE",
+        "LONGNAME": "Master of Engineering in Electrical and Computer Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ECE",
+        "DEGREE": "MEPSE",
+        "LONGNAME": "Master of Engineering in Power Systems Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ECE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Electrical and Computer Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "FPE",
+        "DEGREE": "GC",
+        "LONGNAME": "Graduate Certificate in Fire Protection Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "FPE",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in Fire Protection Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "FPE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Fire Protection Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "IMGD",
+        "DEGREE": "MFA",
+        "LONGNAME": "M.F.A. in Interactive Media and Game Development",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "IMGD",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in Interactive Media and Game Development",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "IMGD",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Computational Media Program Goals and Objectives",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "LST",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Learning Sciences and Technologies (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "LST",
+        "DEGREE": "MSCW",
+        "LONGNAME": "M.S. in Learning Sciences and Technologies (coursework)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "LST",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Learning Sciences and Technologies",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MFE",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Manufacturing Engineering (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MFE",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Manufacturing Engineering (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MFE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Manufacturing Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MTE",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Materials Science and Engineering (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MTE",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S in Materials Science and Engineering (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MTE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Materials Science and Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "MME",
+        "LONGNAME": "Master of Mathematics for Educators",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "MSAM",
+        "LONGNAME": "M.S. in Applied Mathematics Program",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "MSAS",
+        "LONGNAME": "M.S. in Applied Statistics Program",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "MMED",
+        "LONGNAME": "Master of Science in Mathematics for Educators",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "MSFM",
+        "LONGNAME": "Professional Master of Science in Financial Mathematics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "MSIM",
+        "LONGNAME": "Professional Master of Science in Industrial Mathematics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "PHDM",
+        "LONGNAME": "Ph.D in Mathematical Sciences",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "MA",
+        "DEGREE": "PHDS",
+        "LONGNAME": "Ph.D in Statistics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ME",
+        "DEGREE": "GCMETL",
+        "LONGNAME": "Graduate Certificate: Mechanical Engineering for Technical Leaders",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ME",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Mechanical Engineering (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ME",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Mechanical Engineering (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "ME",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Mechanical Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "NEU",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Neuroscience (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "NEU",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Neuroscience (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "PH",
+        "DEGREE": "MPED",
+        "LONGNAME": "Master of Science in Physics for Educators",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "PH",
+        "DEGREE": "GCNSE",
+        "LONGNAME": "Graduate Certificate in Nuclear Science and Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "PH",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Physics or Applied Physics (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "PH",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Physics or Applied Physics (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "PH",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Physics or Applied Physics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "RBE",
+        "DEGREE": "GC",
+        "LONGNAME": "Graduate Certificate in Robotics Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "RBE",
+        "DEGREE": "MST",
+        "LONGNAME": "M.S. in Robotics Engineering (thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "RBE",
+        "DEGREE": "MSNT",
+        "LONGNAME": "M.S. in Robotics Engineering (non-thesis)",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "RBE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D  in Robotics Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "DEV",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in Science and Technology for Innovation in Global Development",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SD",
+        "DEGREE": "MSSD",
+        "LONGNAME": "M.S. in System Dynamics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SD",
+        "DEGREE": "MSSM",
+        "LONGNAME": "M.S. in Systems Modeling",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SD",
+        "DEGREE": "PHDSD",
+        "LONGNAME": "Ph.D in System Dynamics",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SDIM",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in System Dynamics and Innovation Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SDIM",
+        "DEGREE": "GC",
+        "LONGNAME": "Graduate Certificate in System Dynamics and Innovation Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SE",
+        "DEGREE": "STC",
+        "LONGNAME": "Systems Thinking Certificate",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SE",
+        "DEGREE": "GC",
+        "LONGNAME": "Graduate Certificate in System Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SE",
+        "DEGREE": "GCF",
+        "LONGNAME": "Graduate Certificate in Systems Engineering Fundamentals",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SE",
+        "DEGREE": "AC",
+        "LONGNAME": "Advanced Certificate in Systems Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SE",
+        "DEGREE": "MS",
+        "LONGNAME": "M.S. in Systems Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "SE",
+        "DEGREE": "PHD",
+        "LONGNAME": "Ph.D in Systems Engineering",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "OTHER",
+        "DEGREE": "GCPSM",
+        "LONGNAME": "Graduate Certificate in Power Systems Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "OTHER",
+        "DEGREE": "GCLSM",
+        "LONGNAME": "Graduate Certificate in Life Science Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "OTHER",
+        "DEGREE": "IMSBM",
+        "LONGNAME": "Interdisciplinary M.S. in Bioscience Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "OTHER",
+        "DEGREE": "IMSMEM",
+        "LONGNAME": "Interdisciplinary M.S. in Manufacturing Engineering Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "OTHER",
+        "DEGREE": "IMSPSM",
+        "LONGNAME": "Interdisciplinary M.S. in Power Systems Management",
+        "COURSES": {
+
+        }
+    },
+    {
+        "AREA": "OTHER",
+        "DEGREE": "IMSSEL",
+        "LONGNAME": "Interdisciplinary M.S. in Systems Engineering Leadership",
+        "COURSES": {
+
+        }
+    }
+]

@@ -27,11 +27,6 @@ namespace CSharpWebApp.Controllers
         {
             return View();
         }
-        public void Test()
-        {
-            var providerChart = System.Web.Helpers.Json.Decode(System.IO.File.ReadAllText("areas.js"));
-            Console.Write(providerChart);
-        }
         public IActionResult CourseView()
         {
             CourseViewData courseViewData = new()
@@ -42,7 +37,6 @@ namespace CSharpWebApp.Controllers
         }
         public IActionResult Administration()
         {
-            Test();
             return View();
         }
         public IActionResult AddCourse()
@@ -52,7 +46,7 @@ namespace CSharpWebApp.Controllers
         public IActionResult AddCourseSection(CourseSection section)
         {
             CourseSection sectionCopy = section;
-            sectionCopy.courseid = section.courseid.Remove(0, section.area.Length);
+            sectionCopy.courseid = section.courseid!.Remove(0, section.area!.Length);
             string values = "'" + sectionCopy.courseid + "','" + sectionCopy.area + "','" + sectionCopy.time + "','" + sectionCopy.periodlength + "','" + sectionCopy.building + "','" + sectionCopy.room + "'";
             using MySqlConnection con = new("server=localhost,3306;database=advising;user=root;password=password;");
             using MySqlCommand cmd = con.CreateCommand();
@@ -104,7 +98,7 @@ namespace CSharpWebApp.Controllers
             using MySqlCommand cmd = con.CreateCommand();
             cmd.CommandText = @"INSERT INTO `courses` (`courseid`, `area`,`description`, `professor`,`name`) VALUES (@courseid, @area, @description, @professor, @name);";
             Course course = var;
-            course.courseid = course.courseid.Remove(0, var.area.Length);
+            course.courseid = course.courseid!.Remove(0, var.area!.Length);
             BindParams(cmd, course);
             con.Open();
             try

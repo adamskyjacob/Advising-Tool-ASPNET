@@ -1,0 +1,1394 @@
+﻿[
+    {
+        "AREA": "AE",
+        "SECTIONS": [
+            {
+                "SECTION": "FD",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5131
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5132
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5133
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5134
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "PE",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5231
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5232
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5233
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5234
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "FDC",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5331
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5332
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5333
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5334
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5335
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "MS",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5431
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5432
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5433
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5434
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5435
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "GAET",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5031
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5032
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "AERC",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5098
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 5900
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 6900
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 6098
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "AE",
+                            "ID": 6099
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            }
+        ]
+    },
+    {
+        "AREA": "BB",
+        "SECTIONS": [
+            {
+                "SECTION": "TSBD",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 505
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 508
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 509
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 560
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 581
+                        },
+                        {
+                            "AREA": "BCB",
+                            "ID": 501
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "RGC",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 551
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 590
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 561
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BB",
+                            "ID": 562
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BCB",
+                            "ID": 502
+                        },
+                        {
+                            "AREA": "CS",
+                            "ID": 582
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "CH",
+                            "ID": 540
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "CHE",
+                            "ID": 521
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            }
+        ]
+    },
+    {
+        "AREA": "BME",
+        "SECTIONS": [
+            {
+                "SECTION": "PROJ",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 5900
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 5910
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 5920
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "MA",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MA",
+                            "ID": 511
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MA",
+                            "ID": 501
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "LS",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 560
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 562
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 564
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "RC",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 531
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 532
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "CNAD",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 592
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "VCITC",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "ETR",
+                            "ID": 500
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ETR",
+                            "ID": 593
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "SYS",
+                            "ID": 501
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "SYS",
+                            "ID": 502
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "BMTE",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 531
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 550
+                        },
+                        {
+                            "AREA": "ME",
+                            "ID": 550
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 552
+                        },
+                        {
+                            "AREA": "ME",
+                            "ID": 552
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 555
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 583
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 4814
+                        },
+                        {
+                            "AREA": "ME",
+                            "ID": 4814
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 4828
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 4831
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 4701
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 5311
+                        },
+                        {
+                            "AREA": "MTE",
+                            "ID": 511
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 531
+                        },
+                        {
+                            "AREA": "MTE",
+                            "ID": 512
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 5370
+                        },
+                        {
+                            "AREA": "MTE",
+                            "ID": 5841
+                        },
+                        {
+                            "AREA": "MFE",
+                            "ID": 5841
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "PH",
+                            "ID": 561
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MTE",
+                            "ID": 509
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MTE",
+                            "ID": 558
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "BMMR",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 552
+                        },
+                        {
+                            "AREA": "BME",
+                            "ID": 552
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "RBE",
+                            "ID": 500
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 501
+                        },
+                        {
+                            "AREA": "RBE",
+                            "ID": 501
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "RBE",
+                            "ID": 520
+                        },
+                        {
+                            "AREA": "BME",
+                            "ID": 520
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 553
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 5205
+                        },
+                        {
+                            "AREA": "RBE",
+                            "ID": 580
+                        },
+                        {
+                            "AREA": "BME",
+                            "ID": 580
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 4504
+                        },
+                        {
+                            "AREA": "BME",
+                            "ID": 4504
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ME",
+                            "ID": 4606
+                        },
+                        {
+                            "AREA": "BME",
+                            "ID": 4606
+                        }
+                    ],
+                    {
+                        "AREA": "BME",
+                        "ID": 4503
+                    }
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "ATDC",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "CS",
+                            "ID": 583
+                        },
+                        {
+                            "AREA": "BCB",
+                            "ID": 503
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ECE",
+                            "ID": 545
+                        },
+                        {
+                            "AREA": "CS",
+                            "ID": 545
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 523
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 581
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 4011
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BME",
+                            "ID": 4201
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ECE",
+                            "ID": 503
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "ECE",
+                            "ID": 5106
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "CS",
+                            "ID": 534
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "CS",
+                            "ID": 539
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            }
+        ]
+    },
+    {
+        "AREA": "BUS",
+        "SECTIONS": [
+            {
+                "SECTION": "ABAM",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 587
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 562
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "OIE",
+                            "ID": 559
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "AOA",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 562
+                        },
+                        {
+                            "AREA": "MKT",
+                            "ID": 568
+                        },
+                        {
+                            "AREA": "MIS",
+                            "ID": 587
+                        }
+                    ]
+                ],
+                "TWO": [
+                    {
+                        "AREA": "OIE",
+                        "ID": 559
+                    },
+                    {
+                        "AREA": "OIE",
+                        "ID": 542
+                    },
+                    {
+                        "AREA": "OIE",
+                        "ID": 548
+                    }
+                ],
+                "THREE": []
+            },
+            {
+                "SECTION": "AA",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 502
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 584
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 587
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "OIE",
+                            "ID": 559
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "DS",
+                            "ID": 501
+                        },
+                        {
+                            "AREA": "DS",
+                            "ID": 502
+                        },
+                        {
+                            "AREA": "MA",
+                            "ID": 543
+                        },
+                        {
+                            "AREA": "MA",
+                            "ID": 511
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "BPC",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 500
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 561
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 569
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "BA",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 502
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 584
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "OIE",
+                            "ID": 552
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "DA",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 587
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 568
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 562
+                        },
+                        {
+                            "AREA": "MKT",
+                            "ID": 565
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "DT",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 500
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "OIE",
+                            "ID": 501
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 544
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 558
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 576
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 533
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 537
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "ETR",
+                "COURSES": [
+                    {
+                        "AREA": "ETR",
+                        "ID": 500
+                    }
+                ],
+                "TWO": [
+                    {
+                        "AREA": "BUS",
+                        "ID": 500
+                    },
+                    {
+                        "AREA": "BUS",
+                        "ID": 546
+                    },
+                    {
+                        "AREA": "ETR",
+                        "ID": 593
+                    },
+                    {
+                        "AREA": "ETR",
+                        "ID": 596
+                    }
+                ],
+                "THREE": []
+            },
+            {
+                "SECTION": "ISD",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 571
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 582
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 585
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "IT",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 502
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 581
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 584
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "ITUE",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 583
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 586
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 561
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "MA",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 500
+                        },
+                        {
+                            "AREA": "MKT",
+                            "ID": 561
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 565
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 568
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "OE",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "OIE",
+                            "ID": 554
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 558
+                        }
+                    ]
+                ],
+                "TWO": [
+                    [
+                        {
+                            "AREA": "FIN",
+                            "ID": 500
+                        },
+                        {
+                            "AREA": "MIS",
+                            "ID": 576
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 537
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 554
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 558
+                        }
+                    ]
+                ],
+                "THREE": []
+            },
+            {
+                "SECTION": "OA",
+                "COURSES": [],
+                "TWO": [],
+                "THREE": [
+                    [
+                        {
+                            "AREA": "OIE",
+                            "ID": 501
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 542
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 544
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 548
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 558
+                        }
+                    ]
+                ]
+            },
+            {
+                "SECTION": "OMI",
+                "COURSES": [],
+                "TWO": [],
+                "THREE": [
+                    [
+                        {
+                            "AREA": "ETR",
+                            "ID": 500
+                        },
+                        {
+                            "AREA": "ETR",
+                            "ID": 593
+                        },
+                        {
+                            "AREA": "FIN",
+                            "ID": 500
+                        },
+                        {
+                            "AREA": "MIS",
+                            "ID": 576
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 505
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 533
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 537
+                        }
+                    ]
+                ]
+            },
+            {
+                "SECTION": "PRODM",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 569
+                        }
+                    ]
+                ],
+                "TWO": [
+                    [
+                        {
+                            "AREA": "ETR",
+                            "ID": 593
+                        },
+                        {
+                            "AREA": "MIS",
+                            "ID": 576
+                        },
+                        {
+                            "AREA": "MIS",
+                            "ID": 583
+                        },
+                        {
+                            "AREA": "MIS",
+                            "ID": 585
+                        },
+                        {
+                            "AREA": "MKT",
+                            "ID": 565
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 505
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 533
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 535
+                        }
+                    ]
+                ],
+                "THREE": []
+            },
+            {
+                "SECTION": "PROJM",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 576
+                        }
+                    ]
+                ],
+                "TWO": [
+                    [
+                        {
+                            "AREA": "OBC",
+                            "ID": 505
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 533
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 535
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 537
+                        }
+                    ]
+                ],
+                "THREE": []
+            },
+            {
+                "SECTION": "RES",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "BUS",
+                            "ID": 598
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BUS",
+                            "ID": 5900
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "BUS",
+                            "ID": 698
+                        }
+                    ]
+                ],
+                "TWO": [],
+                "THREE": []
+            },
+            {
+                "SECTION": "SCM",
+                "COURSES": [
+                    [
+                        {
+                            "AREA": "OIE",
+                            "ID": 549
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 553
+                        }
+                    ]
+                ],
+                "TWO": [
+                    [
+                        {
+                            "AREA": "MKT",
+                            "ID": 561
+                        },
+                        {
+                            "AREA": "OBC",
+                            "ID": 533
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 548
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 549
+                        },
+                        {
+                            "AREA": "OIE",
+                            "ID": 553
+                        }
+                    ]
+                ],
+                "THREE": []
+            },
+            {
+                "SECTION": "SDIUX",
+                "COURSES": [
+                ],
+                "TWO": [],
+                "THREE": [
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 500
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 571
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "MIS",
+                            "ID": 582
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "IMGD",
+                            "ID": 5000
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "IMGD",
+                            "ID": 5300
+                        }
+                    ],
+                    [
+                        {
+                            "AREA": "RBE",
+                            "ID": 526
+                        },
+                        {
+                            "AREA": "CS",
+                            "ID": 526
+                        },
+                        {
+                            "AREA": "RBE",
+                            "ID": 595
+                        },
+                        {
+                            "AREA": "WR",
+                            "ID": 593
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+]

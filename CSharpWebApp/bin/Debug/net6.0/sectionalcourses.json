@@ -1,0 +1,280 @@
+﻿[
+    {
+        "AREA": "AE",
+        "SECTIONS": [
+            {
+                "SECTION": "FD",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5131
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5132
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5133
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5134
+                    }
+                ]
+            },
+            {
+                "SECTION": "PE",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5231
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5232
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5233
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5234
+                    }
+                ]
+            },
+            {
+                "SECTION": "FDC",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5331
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5332
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5333
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5334
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5335
+                    }
+                ]
+            },
+            {
+                "SECTION": "MS",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5431
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5432
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5433
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5434
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5435
+                    }
+                ]
+            },
+            {
+                "SECTION": "GAET",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5031
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5032
+                    }
+                ]
+            },
+            {
+                "SECTION": "AERC",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5098
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5900
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 6900
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 6098
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 6099
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "AREA": "BB",
+        "SECTIONS": [
+            {
+                "SECTION": "TSBD",
+                "COURSES": [
+                    {
+                        "AREA": "BB",
+                        "ID": 505
+                    },
+                    {
+                        "AREA": "BB",
+                        "ID": 508
+                    },
+                    {
+                        "AREA": "BB",
+                        "ID": 509
+                    },
+                    {
+                        "AREA": "B",
+                        "ID": 560
+                    },
+                    {
+                        "AREA": "BB",
+                        "ID": 581
+                    },
+                    {
+                        "AREA": "BCB",
+                        "ID": 501
+                    }
+                ]
+            },
+            {
+                "SECTION": "PE",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5231
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5232
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5233
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5234
+                    }
+                ]
+            },
+            {
+                "SECTION": "FDC",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5331
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5332
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5333
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5334
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5335
+                    }
+                ]
+            },
+            {
+                "SECTION": "MS",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5431
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5432
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5433
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5434
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5435
+                    }
+                ]
+            },
+            {
+                "SECTION": "GAET",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5031
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5032
+                    }
+                ]
+            },
+            {
+                "SECTION": "AERC",
+                "COURSES": [
+                    {
+                        "AREA": "AE",
+                        "ID": 5098
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 5900
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 6900
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 6098
+                    },
+                    {
+                        "AREA": "AE",
+                        "ID": 6099
+                    }
+                ]
+            }
+        ]
+    }
+]
